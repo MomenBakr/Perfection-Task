@@ -45,7 +45,6 @@ class UsersListScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -96,8 +95,7 @@ class UsersListScreen extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return InkWell(
                           onTap: (){
-                            Get.to(()=> UserDetailsScreen() ,
-                                binding: UserDetailsBinding(id: controller.usersListModel!.data![index].id!.toString()));
+                            Get.to(()=> UserDetailsScreen() , binding: UserDetailsBinding(id: controller.usersListModel!.data![index].id!.toString()));
                           },
                             child: UserListCard(index: index)
                         );

@@ -1,0 +1,1 @@
+ /Users/myapplemac/Flutter\ Apps/task/.dart_tool/flutter_build/acd8234477bf7570cef111d445add5a8/native_assets.yaml: 

@@ -40,6 +40,7 @@ class UserDetailsScreen extends StatelessWidget {
                       color: Colors.grey.shade300,
                       image: DecorationImage(
                         fit: BoxFit.cover,
+                          // image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s'))
                           image: NetworkImage('${controller.userDetailsModel!.data!.avatar}'))
                     ),
                   ),

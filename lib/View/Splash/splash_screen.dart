@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:perfection_company_task/View/Layout/layout.dart';
+import 'package:perfection_company_task/View/Login/login_screen.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -25,11 +26,11 @@ class _SplashScreenState extends State<SplashScreen> {
       splash: SizedBox(
         width: 200.w,
         height: 500.h,
-        child: Image.asset('Assets/images/logo.webp' ,fit: BoxFit.cover,),
+        child: Image.asset('Assets/images/aast-logo.webp' ,fit: BoxFit.cover,),
       ),
-      nextScreen:  Layout(),
-      animationDuration: const Duration(seconds: 2),
-      splashTransition: SplashTransition.rotationTransition,
+      nextScreen:  LoginScreen(),
+      animationDuration: const Duration(seconds: 3),
+      splashTransition: SplashTransition.fadeTransition,
       duration: 3,
     );
   }

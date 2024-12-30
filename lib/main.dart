@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:perfection_company_task/Service/Storage_service/storage_service.dart';
+import 'package:perfection_company_task/View/Login/login_screen.dart';
 import 'package:perfection_company_task/View/User_Details/user_details_screen.dart';
 import 'package:perfection_company_task/generated/l10n.dart';
 import 'Binding/initial.dart';

@@ -51,7 +51,39 @@ class HttpService {
 
 
 
+  static Future<ApiResult<dynamic>> postRequest(
+      String endpoint,
+      Map<String, dynamic> data,
+      {String? token}) async {
+    try {
+      // Initialize headers
+      var headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token',
+      };
 
+      // var headers = {'Auth': '', 'FirebaseToken': '', 'Platform': ''};
+
+
+      // if (token != null) {
+      //   headers['Authorization'] = 'Bearer $token';
+      // }
+
+      final uri = Uri.parse(endpoint);
+
+
+      final response = await client.post(
+        uri,
+        body: jsonEncode(data),
+        headers: headers,
+      );
+      print(response);
+      return handleResponse(response);
+    } catch (e) {
+      return ApiResult.failure('POST request failed: $e');
+    }
+  }
 
 
 
